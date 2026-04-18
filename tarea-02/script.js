@@ -6,18 +6,19 @@ const botonLimpiar = document.getElementById("limpiar-chat");
 
 let historialMensajes = [
     { tipo: "usuario", mensaje: "Cómo mejorar un formulario???", hora: obtenerHoraActual() },
-    { tipo: "asistente", mensaje: "Te recomiendo revisar contraste y jerarquía visual. 🌟", hora: obtenerHoraActual() },
+    { tipo: "asistente", mensaje: "Te recomiendo usar etiquetas claras y buen contraste ", hora: obtenerHoraActual() },
     { tipo: "usuario", mensaje: "Qué es html semántico?¡?", hora: obtenerHoraActual() },
-    { tipo: "asistente", mensaje: "Es HTML que tiene significado estructural. 😊", hora: obtenerHoraActual() },
+    { tipo: "asistente", mensaje: "Es el uso de etiquetas HTML que describen el significado del contenido", hora: obtenerHoraActual() },
     { tipo: "usuario", mensaje: "Por qué tengo que usar label en los formularios?????", hora: obtenerHoraActual() },
+    { tipo: "asistente", mensaje: "Porque mejora la accesibilidad y permite que lectores de pantalla identifiquen correctamente los campos.", hora: obtenerHoraActual() },
 ];
 
 const respuestasAsistente = [
-    "Interesante pregunta sobre diseño de interfaces.",
-    "Recuerda cuidar la jerarquía visual y el contraste.",
+    "Hola, ¿En que puedo ayudarte con tu formulario? ",
+    "Evita pedir más información de la necesaria en el formulario",
     "Piensa primero en la experiencia de usuario.",
-    "Te recomiendo revisar la accesibilidad del formulario.",
-    "Podrías mejorar el diseño usando HTML semántico."
+    "Te recomiendo revisar la estructura del formulario.",
+    "Asegúrate de mostrar mensajes de error claros y específicos."
 ]
 
 function obtenerHoraActual() {
